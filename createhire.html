@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 class="animated-title">Local link</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="decision.html">Buy</a></li>
+                <li><a href="sell.html">Sell</a></li>
+                <li><a href="hire.html">Hire</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+<div class="form-container">
+    <h2>USER DETAILS</h2>
+    <form id="userForm" data-netlify="true">
+        <label for="firstName">Name:</label>
+        <input type="text" id="firstName" name="firstName" required>
+
+        <label for="lastName">Educational Qualifications:</label>
+        <input type="text" id="lastName" name="lastName" required>
+
+        <label for="productName">Current Job:</label>
+        <input type="text" id="productName" name="productName" required>
+	
+            <select type="form" class="form-control-select" required>
+                <option class="select-option" value="" disabled selected>Type Of Job Willing For</option>
+                <option class="select-option" value="Company Website">salesmen</option>
+                <option class="select-option" value="Landing Page">driver</option>
+                <option class="select-option" value="Online Shop">Cleaner</option>
+		        <option class="select-option" value="Online Shop">accountant</option>
+ 		        <option class="select-option" value="Online Shop">Others</option>
+            </select><br>
+        
+	
+            <input type="number" class="form-control-input" placeholder="Package(Annual)"required>
+        
+        <label for="companyName">Phone Number:</label>
+        <input type="text" id="companyName" name="companyName" required>
+
+        <label for="companyName">Email:</label>
+        <input type="text" id="companyName" name="companyName" required>
+    
+        <button type="submit">Submit</button>
+    </form>
+</div>
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <h2 class="modal-title">Submission Successful</h2>
+        <p>Form submitted! Check the console for details.</p>
+    </div>
+</div>
+<footer>
+    <p>&copy; The NGP School 2024</p>
+</footer>
+</body>
+</html>
